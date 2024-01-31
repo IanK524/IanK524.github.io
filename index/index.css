@@ -3,6 +3,10 @@ body {
     background-color: #000000;
 }
 
-p {
-    background-color: #9502f7;
+.standard {
+    color: #ffffff
+}
+
+.purpleText {
+    color: #9502f7;
 }
