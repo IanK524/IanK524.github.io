@@ -1,6 +1,11 @@
+main {
+    position: absolute;
+    z-index: 0;
+}
+
 .backgroundImage {
     margin: 0;
-    background-image: url('../resources/bg.png');
+    background-image: url('../resources/index/bg.png');
     background-size: cover;
     background-position: 50%,50%;
     position: absolute;
@@ -14,13 +19,8 @@
 
 @keyframes fadeIn {
     0% { opacity: 0; }
-    55% { opacity: 0; } /* Arbitrary number goes crazy */
+    55% { opacity: 0; }
     100% { opacity: 1; }
-}
-
-main {
-    position: absolute;
-    z-index: 0;
 }
 
 #title {
@@ -39,4 +39,54 @@ main {
 
 #subtitle2 {
     text-shadow: 0 0 1px #ffffff, 0 0 3px #e3c0ff, 0 0 5px #d7a6ff, 0 0 7px #cb8cff, 0 0 9px #c073ff, 0 0 11px #b459ff, 0 0 13px #a940ff;
+}
+
+nav {
+    --nav-width: 1;
+
+    position: fixed;
+    left: 50%;
+    bottom: 3%;
+    transform: translate(-50%, 0);
+    display: flex;
+    border-radius: 14.4px;
+    padding: 14.4px;
+}
+
+nav > a {
+    position: static;
+    background-image: url('../resources/index/button_neutral.png');
+    background-size: 100% 100%;
+    animation: fadeIn 5s;
+    padding: 7.2px;
+
+    font-size: 25.92px;
+    font-family: "Pixelify Sans", sans-serif;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+nav > a ~ a {
+    margin-left: 10.08px;
+}
+
+nav > a:hover {
+    background-image: url('../resources/index/button_rollover.png');
+}
+
+/* Adjust sizes for lower width screens */
+@media only screen and (max-width: 600px) {
+    nav {
+        border-radius: calc(14.4px * var(--nav-width));
+        padding: calc(14.4px * var(--nav-width));
+    }
+
+    nav > a {
+        padding: calc(7.2px * var(--nav-width));
+        font-size: calc(25.92px * var(--nav-width));
+    }
+
+    nav > a ~ a {
+        margin-left: calc(10.08px * var(--nav-width));
+    }
 }
