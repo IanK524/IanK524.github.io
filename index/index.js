@@ -1,3 +1,4 @@
+const DELAY = 600;
 var i = 0;
 var txt1 = 'Developer, Artist, ';
 var txt2 = 'World Builder';
@@ -24,5 +25,5 @@ function typeSubtitle2() {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-  typeSubtitle();
+  setTimeout(typeSubtitle,DELAY)
 }, false);
