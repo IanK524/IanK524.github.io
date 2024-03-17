@@ -9,12 +9,12 @@
     bottom: 0;
     left: 0;
     right: 0;
-    animation: fadeIn 4s;
+    animation: fadeIn 5s;
 }
 
 @keyframes fadeIn {
     0% { opacity: 0; }
-    53% { opacity: 0; } /* Arbitrary number goes crazy */
+    55% { opacity: 0; } /* Arbitrary number goes crazy */
     100% { opacity: 1; }
 }
 
