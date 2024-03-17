@@ -40,3 +40,37 @@ main {
 #subtitle2 {
     text-shadow: 0 0 1px #ffffff, 0 0 3px #e3c0ff, 0 0 5px #d7a6ff, 0 0 7px #cb8cff, 0 0 9px #c073ff, 0 0 11px #b459ff, 0 0 13px #a940ff;
 }
+
+/* Shoutout to Elan for this code (I did not ask him) */
+nav {
+    --nav-width: 1;
+
+    position: fixed;
+    left: 50%;
+    bottom: 3%;
+    transform: translate(-50%, 0);
+    display: flex;
+    border-radius: min(14.4px, calc(14.4 / var(--nav-width) * 100vw));
+    padding: min(7.2px, calc(7.2 / var(--nav-width) * 100vw));
+}
+
+nav > a {
+    position: static;
+    background-image: url(../resources/button_neutral.png);
+    background-size: 100% 100%;
+    animation: fadeIn 5s;
+    padding: min(7.2px, calc(7.2 / var(--nav-width) * 100vw));
+
+    font-size: min(25.92px, calc(25.92 / var(--nav-width) * 100vw));
+    font-family: "Pixelify Sans", sans-serif;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+nav > a ~ a {
+    margin-left: min(10.08px, calc(10.08 / var(--nav-width) * 100vw));
+}
+
+nav > a:hover {
+    background-image: url(../resources/button_rollover.png);
+}
