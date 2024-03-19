@@ -17,6 +17,16 @@ html {
 }
 
 .tower {
-    position: absolute;
-    min-height: 100%;
+    --tower-width: 1;
+
+    min-height: 100vh;
+    width: 70%;
+    margin: auto;
+}
+
+@media only screen and (max-width: 1500px) {
+    .tower {
+        /* THIS CALCULATION IS FUCKING BROKEN LOL */
+        width: calc(70% + (30 * var(--tower-width)));
+    }
 }
