@@ -1,3 +1,8 @@
+body {
+    /* background-image: url(); */
+    background-repeat: repeat;    
+}
+
 .tower {
     background-color: purple;
 }
