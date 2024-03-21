@@ -1,8 +1,9 @@
 body {
-    /* background-image: url(); */
+    background-image: url(../resources/about/sidebarPurple.png);
     background-repeat: repeat;    
 }
 
 .tower {
-    background-color: purple;
+    background-color: black;
+    border-color: #6500ad;
 }
