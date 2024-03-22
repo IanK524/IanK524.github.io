@@ -1,0 +1,9 @@
+body {
+    background-image: url('../resources/gallery/sidebar-purple.png');
+    background-repeat: repeat;    
+}
+
+.tower {
+    background-color: black;
+    border-color: #5f00ad;
+}

@@ -1,0 +1,9 @@
+body {
+    background-image: url('../resources/contact/sidebar-pink.png');
+    background-repeat: repeat;    
+}
+
+.tower {
+    background-color: black;
+    border-color: #8a00ad;
+}

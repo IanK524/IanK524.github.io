@@ -1,9 +1,9 @@
 body {
-    background-image: url(../resources/about/sidebarPurple.png);
+    background-image: url('../resources/about/sidebar-blue.png');
     background-repeat: repeat;    
 }
 
 .tower {
     background-color: black;
-    border-color: #6500ad;
+    border-color: #0068ad;
 }

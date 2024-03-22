@@ -1,0 +1,9 @@
+body {
+    background-image: url('../resources/projects/sidebar-deepblue.png');
+    background-repeat: repeat;    
+}
+
+.tower {
+    background-color: black;
+    border-color: #1100ad;
+}
